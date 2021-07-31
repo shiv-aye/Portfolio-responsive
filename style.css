@@ -1,300 +1,199 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    scroll-behavior: smooth;
-}
-.min-width{
-    min-width: 500px;
-}
-#line{
-    width: 100vw;
-}
- /*** Navbar ***/
-.navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    justify-content: space-around;
-    width: 100%;
-    height: 14%;
-}
-.nav-color{
-    background: #49484805;
-}
-.logo{
-    display: inline-block;
-    margin: 0 10% 0 3%;
-    color: white;
-    font-weight: 800;
-}
-.logo span{
-    color: #ffc107;
-}
-.navlist{
-    text-align: center;
-    width: 90%;
-}
-.nav-items{
-    display: inline-block;
-    margin: 0 4% 0 4%;
-}
-.nav-items a{
-    color: white;
-    font-size: 19px;
-    font-weight: 400;
-}
-.nav-items a:hover{
-    color: #ffc107;
-    transition: 0.3s ease;
-}
-/* Menu button styling */
-.menu-button{
-    display: none;
-    position: fixed;
-    top: 4%;
-    right: 6%;
-    font-size: 25px;
-    color: #f8f8f8;
-}
-.home-button{
-    display: none;
-    position: fixed;
-    top: 4%;
-    left: 6%;
-    font-size: 25px;
-}
-.home-button a{
-    color: white;
-}
-/* About me */
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width">
+    <script src="https://kit.fontawesome.com/6843000e64.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
-.about-me{
-    overflow-y: scroll ;
-    display: flex;
-    flex-direction: column;
-    background:linear-gradient(to top, rgba(0, 0, 0, 0.959), rgba(22, 22, 22, 0.712)), url(images/back1.jpeg) no-repeat fixed;
-    background-size: cover;
-    align-items: center;
-    color: white;
-    height: 100vh;
- }
- .about-me::-webkit-scrollbar{
-     display: none;
- }
- .text-1{
-     margin: 20vh 0 0 0;
-     color: rgba(255, 255, 255, 0.945);
-     font-size: 60px;
-     font-weight: 700;
-     text-align: center;
- }
- .text-1 span{
-     color: #ffc107b7;
-     font-size: 60px;
-     font-weight: 700;
- }
- .text-2{
-     margin: 5% 0 5% 0;
-    color: white;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
- }
- .text-3{
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    width: 70%;
- }
- /* Education Section styling */
- .education{
-     background:linear-gradient(to top, rgb(0, 0, 0), rgba(12, 12, 12, 0.788)), url(images/education-back.jpg) no-repeat center fixed;
-     background-size: cover;
-     height: 100%;
- }
- .education-heading{
-    text-align: center;
-    font-size: 30px;
-    color: #fff;
-    padding-top: 5%;
- }
- .education-elements{
-     padding: 5% 20% 10% 20%;
-     color: white;
-     text-align: center;
- }
- .education-elements h1{
-    font-size: 36px;
-    font-weight: lighter;
-    margin-bottom: 2%;
- }
- .education-elements p{
-     margin-bottom: 2%;
-     font-size: 20px;
-     font-style: italic;
-     color: #ffc107b6;
- }
-/* Skills styling */
-.skills{
-    background:linear-gradient(to top, rgba(8, 8, 8, 0.945), rgba(0, 0, 0, 0.301)), url(images/skills-back.jpg) no-repeat center fixed;
-    background-size: cover;
-    align-items: center;
-    color: white;
-    height: 100vh;
-}
-.skill-heading{
-    text-align: center;
-    padding-top: 5%;
-    font-size: 30px;
-}
-.skillset{
-    margin-top: 5%;
-    height: 70vh;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    padding: 10px;
-    text-align: center;
-    overflow-y: scroll;
-}
-.skillset::-webkit-scrollbar{
-    display: none;
-}
-.grid-item{
-    padding: 20px;
-    text-align: center;
-    font-size: 25px;
-}
-.bar-container{
-    align-items: center;
-    margin: 3% 0% 0 30%;
-    width: 50%;
-    height: 6px;
-    background-color: #f8f8f8;
-}
-.html{
-    background-color: #ffc107;
-    width: 90%;
-    height: 6px;
-}
-.css{
-    background-color: #ffc107;
-    width: 75%;
-    height: 6px;
-}
-.java{
-    background-color: #ffc107;
-    width: 70%;
-    height: 6px;
-}
-.javascript{
-    background-color: #ffc107;
-    width: 60%;
-    height: 6px;
-}
-.reactjs{
-    background-color: #ffc107;
-    width: 20%;
-    height: 6px;
-}
-.dsa{
-    background-color: #ffc107;
-    width: 60%;
-    height: 6px;
-}
-/* Project-styling */
-.projects{
-    color: white;   
-    background-color: black;
-    height: 100vh;
-    overflow-y: scroll;
-}
-.projects::-webkit-scrollbar{
-    display: none;
-}
-.project-heading{
-    text-align: center;
-    padding-top: 5%;
-    font-size: 30px;
-}
-.project-list{
-    margin: 5%;
-    padding: 0 0 5% 0;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    height: 70vh;
-    grid-gap: 10%;
-}
-.grid-item-project{
-    background-color: #ffc10769;
-    border-radius: 10px;
-}
-/* Contact me styling */
-.contact{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.768)), url(images/contact-back.jpg) fixed no-repeat ;
-    background-size: cover;
-    color: white;   
-    height: 30vh;
-}
-.message{
-    padding-top: 3%;
-    font-size: x-large;
-    font-weight: lighter;
-    text-align: center;
-}
-.inline{
-    margin: 3% 2% 0 2%;
-    display: inline-block;
-}
-.inline a{
-    color: white;
-}
-.github i:hover{
-    color: #ffc107;
-    transform: translateY(-4px);
-    transition: 0.3s ease;
-}
-.linkedin i:hover{
-    color: #ffc107;
-    transform: translateY(-4px);
-    transition: 0.3s ease;
-}
-.gmail i:hover{
-    color: #ffc107;
-    transform: translateY(-4px);
-    transition: 0.3s ease;
-}
-.call i:hover{
-    color: #ffc107;
-    transform: translateY(-4px);
-    transition: 0.3s ease;
-}
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Portfolio - Shivay Sambyal</title>
+  </head>
+  <body>
+    <div class="container-all">
+        <!-----Navbar------>
+        <div class="navbar-container min-width" id="1">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>SHI<span>VAY</span> </h1>
+                </div>
+                <ul class="navlist">
+                    <li class="nav-items">
+                        <a href="#2" class="hide-button">About me</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#3" class="hide-button">Education</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#4" class="hide-button" >Skills</a>
+                    </li>
+                    <li class="nav-items">                        
+                        <a href="#5" class="hide-button">Projects</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#6" class="hide-button">Contact Me</a>
+                    </li>
+                </ul>
+            </div> 
+            <!-- Menu button -->
+            <div class="home-button">
+                <a href="#1">
+                    <i class="fas fa-home"></i>
+                </a>                
+            </div>
+            <div class="menu-button">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!-- About me Section -->
+        <div class="about-me min-width" id="2">
+            <div class="text-1">
+                <div class="t1"> Full-Stack <span id="typing-effect" class="text-color"></span></div>
+                <div class="text-2" id="typing">Hi, I'm Shivay. Nice to meet you.</div>
+                <div class="text-3">I have a keen interest in coding and designing, and currently i am learning everything about Full-stack Development.
+                    I have always been fascinated about websites and applications.Now i am able to build something myself. I have made projects
+                    that were challenging for me as a beginner but gave me so much to learn.
+                </div> 
+                <a href="" download="">              
+                <div class="download-resume">                    
+                    <p>R E S U M E</p>                   
+                </div>
+                </a>
+            </div>
+            
+            
+            <div class="my-image">
+                <img src="images/back1.jpeg" alt="">
+            </div>
+        </div>
+        <hr>
+        <!-- Education Section -->
+        <div class="education min-width" id="3">
+            <div class="education-heading">
+                <h1>Education</h1>
+            </div>
+            <div class="education-elements">
+                <div class="college">
+                    <h1>Batchelor of Technology - (ME)</h1>
+                    <p>Chandigarh Group of Colleges, Landran Punjab <br>July 2017- July 2021 <br>CGPA - 7.6</p>
+                </div>
+                <div class="higher-secondary">
+                    <h1>Higher-Secondary</h1>
+                    <p>Gwalior Glory High School - CBSE <br>July 2014-July 2016 <br>Percentage - 60%</p>
+                </div>
+                <div class="matriculation">
+                    <h1>Matriculation</h1>
+                    <p>St.Peter's School - ICSE <br>July 2013-July 2014 <br>Percentage - 78%</p>
+                    <p></p>
+                </div>
+            </div>            
+        </div>
+        <hr>
+        <!-- skills section -->
+        <div class="skills min-width" id="4">
+            <div class="skill-heading">
+                <h1>Skills.</h1>
+            </div>
+            <div class="skillset">
+                <div class="grid-item">HTML
+                    <div class="bar-container">
+                        <div class="html"></div>
+                    </div>
+                </div>
+                <div class="grid-item">CSS
+                    <div class="bar-container">
+                        <div class="css"></div>
+                    </div>
+                </div>
+                <div class="grid-item">Java
+                    <div class="bar-container">
+                        <div class="java"></div>
+                    </div>
+                </div>
+                <div class="grid-item">JavaScript
+                    <div class="bar-container">
+                        <div class="javascript"></div>
+                    </div>
+                </div>
+                <div class="grid-item">ReactJS
+                    <div class="bar-container">
+                        <div class="reactjs"></div>
+                    </div>
+                </div>
+                <div class="grid-item">DSA
+                    <div class="bar-container">
+                        <div class="dsa"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Projects section -->
+        <div class="projects min-width" id="5">
+            <div class="project-heading">
+                <h1>My recent Projects.</h1>
+            </div>
+            <div class="project-list">
+                <div class="portfolio grid-item-project">
+                    <div class="portfolio-text">
+                        Responsive Portfolio <br>
+                        <p>HTML,CSS, and JavaScript</p>
+                    </div>
+                </div>
+                <div class="e-commerce grid-item-project">
+                    <div class="e-commerce-text">
+                        e-Commerce Clone <br>
+                        <p>HTML,CSS, and JavaScript</p>
+                    </div>
+                </div>
+                <div class="netflix grid-item-project">
+                    <div class="netflix-text">
+                        Netflix Clone <br>
+                        <p>HTML,CSS, and JavaScript</p>
+                    </div>
+                </div>
+                <div class="to-do grid-item-project">
+                    <div class="to-do-text">
+                        To-do List <br>
+                        <p>HTML,CSS, and JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Contact me -->
+        <div class="contact min-width" id="6">
+            <div class="to-top">
+                <a href="#1">
+                    <i class="fas fa-arrow-up"></i>
+                </a>                
+            </div>
+            <div class="message">
+                <p>Living, learning, & leveling up <br> one day at a time.</p>
+                <div class="social-media">
+                    <div class="github inline">
+                        <a href="https://github.com/shiv-aye"><i class="fab fa-github-square"></i></i></a>                        
+                    </div>
+                    <div class="linkedin inline">
+                        <a href="https://www.linkedin.com/in/shivay-sambyal-2147741a0/"><i class="fab fa-linkedin-in"></i></a>                        
+                    </div>
+                    <div class="gmail inline">
+                        <a href="mailto: shivaysambyal007@gmail.com"><i class="fas fa-envelope"></i></a>                        
+                    </div>
+                    <div class="call inline">
+                        <a href="skype:<shivaysambyal007>?<action>"><i class="fab fa-skype"></i></a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
-/* media queries */
-@media only screen and (max-width: 1000px)
-{
-    .about-me{
-        background-position: center;
-    }
-    .navbar{
-        display: none;
-    }
-    .menu-button{
-        display: inline;
-    }
-    .home-button{
-        display: inline;
-    }
-    .skillset{
-        overflow-y: scroll;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-    }
-}
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
