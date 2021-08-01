@@ -161,6 +161,7 @@
      background:linear-gradient(to top, rgb(0, 0, 0), rgba(12, 12, 12, 0.788)), url(images/education-back.jpg) no-repeat center fixed;
      background-size: cover;
      height: 100%;
+     width: 100%;
  }
  .education-heading{
     text-align: center;
@@ -190,74 +191,74 @@
     background-size: cover;
     align-items: center;
     color: white;
-    height: 100vh;
+    height: 60vh;
+    width: 100%;
 }
 .skill-heading{
+    padding: 2% 0 0 0;
+    font-size: 20px;
     text-align: center;
-    padding-top: 5%;
-    font-size: 30px;
+    align-items: center;
 }
 .skillset{
-    margin-top: 5%;
-    height: 70vh;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    padding: 10px;
+    margin: 70px 0 70px 0;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    align-items: center;
     text-align: center;
-    overflow-y: scroll;
+}
+.card h2{
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: lighter;
 }
 .skillset::-webkit-scrollbar{
     display: none;
 }
-.grid-item{
-    padding: 20px;
-    text-align: center;
-    font-size: 25px;
+svg{
+    margin-left: 25%;
 }
-.bar-container{
-    align-items: center;
-    margin: 3% 0% 0 30%;
-    width: 50%;
-    height: 6px;
-    background-color: #f8f8f8;
+svg circle{
+    width: 100%;
+    height: 100%;
+    stroke: #ebebeb09;
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: square;
+    transform: translate(5px,5px);
 }
-.html{
-    background-color: #ffc107;
-    width: 90%;
-    height: 6px;
+svg circle:nth-child(2)
+{
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
 }
-.css{
-    background-color: #ffc107;
-    width: 75%;
-    height: 6px;
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke-dasharray: 800;
+    stroke: #ffc107;
 }
-.java{
-    background-color: #ffc107;
-    width: 70%;
-    height: 6px;
+.card:nth-child(2) svg circle:nth-child(2){
+    stroke-dasharray: 760;
+    stroke: #ffc107;
 }
-.javascript{
-    background-color: #ffc107;
-    width: 60%;
-    height: 6px;
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke-dasharray: 670;
+    stroke: #ffc107;
 }
-.reactjs{
-    background-color: #ffc107;
-    width: 20%;
-    height: 6px;
+.card:nth-child(4) svg circle:nth-child(2){
+    stroke-dasharray: 700;
+    stroke: #ffc107;
 }
-.dsa{
-    background-color: #ffc107;
-    width: 60%;
-    height: 6px;
+.card:nth-child(5) svg circle:nth-child(2){
+    stroke-dasharray: 700;
+    stroke: #ffc107;
 }
 /* Project-styling */
 .projects{
-    position: relative;
     color: white;   
     background-color: black;
     height: 100vh;
+    width: 100%;
     overflow-y: scroll;
 }
 .projects::-webkit-scrollbar{
@@ -278,32 +279,27 @@
     grid-gap: 10%;
 }
 .portfolio{
-    position: relative;
     background:linear-gradient(to right,#ffc00242,rgba(41, 41, 41, 0.568)), url(images/portfolio-back.jpg) center no-repeat;
     background-size: 100% 100%;
     border: 1px solid rgb(48, 46, 46);
 }
 .e-commerce{
-    position: relative;
     background: url(images/e-commerce-back.png) center no-repeat;
     background-size: 100% 100%;
     border: 1px solid rgb(78, 77, 77);
 }
 .netflix{
-    position: relative;
     background:linear-gradient(to bottom,#7c121242,rgba(41, 41, 41, 0.568)), url(images/netflix-back.jpg) center  no-repeat;
     background-size: 100% 100%;
     border: 1px solid rgb(43, 42, 42);
 }
 .to-do{
-    position: relative;
     background: url(images/to-do-back.png) center no-repeat;
     background-size: 100% 100%;
     border: 1px solid rgb(61, 60, 60);
 }
 .portfolio-text{
    opacity: 0;
-   position: absolute;
    width: 100%;
    height: 100%;
    text-align: center;
@@ -315,7 +311,6 @@
 }
 .e-commerce-text{
     opacity: 0;
-   position: absolute;
    width: 100%;
    height: 100%;
    text-align: center;
@@ -327,7 +322,6 @@
 }
 .netflix-text{
    opacity: 0;
-   position: absolute;
    width: 100%;
    height: 100%;
    text-align: center;
@@ -338,8 +332,7 @@
    color: #ffc107;
 }
 .to-do-text{
-    opacity: 0;
-   position: absolute;
+   opacity: 0;
    width: 100%;
    height: 100%;
    text-align: center;
@@ -408,23 +401,23 @@
 
 /* Contact me styling */
 .contact{
-    position: relative;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.952),rgba(0, 0, 0, 0.768)), url(images/contact-back.jpg) fixed no-repeat ;
     background-size: cover;
     color: white;   
-    height: 30vh;
+    height: 35vh;
+    width: 100%;
 }
 .to-top{
-    padding: 1% 1% 1% 1%;
+    width: 60px;
+    height: 50px;
     font-size: x-large;
     background-color: #ffc107;
-    color: #0a0a0a;
-    position: absolute;
-    top: 40%;
-    left: 0%;
+    text-align: center;
+
 }
 .to-top a{
-    color: white;
+    color: black;
+    font-size: xx-large;
 }
 .message{
     padding-top: 3%;
@@ -515,13 +508,6 @@
         font-size: x-large;
         padding: 20vh 0 20vh 0;
      }
-    .skillset{
-        overflow-y: scroll;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-    }
     .about-me{
         padding-top: 10vh;
         flex-direction: column;
@@ -628,5 +614,8 @@
     }
     .project-heading{
         font-size: large;
+    }
+    .skillset{
+        margin: 50px 0 0 0;
     }
 }
