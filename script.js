@@ -41,3 +41,4 @@ var current = window.pageYOffset;
   }
   prev = current;
 }
+
